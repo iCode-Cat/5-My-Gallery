@@ -1,0 +1,19 @@
+:root {
+    // Header
+    --fs-header-name:1.4rem;
+    --fs-header-location:1rem;
+    --fs-header-num:1.2rem;
+    --fs-header-label:1.2rem;
+
+    --ff-clr-darkGray:#4E5150;
+    --ff-clr-gray:#E5E5E5;
+    --ff-clr-lightGray:#A9A9A9;
+    --ff-clr-lightestGray:#BDBDBD;
+
+    @media (min-width:50em) {
+        --fs-header-name:2.4rem;
+        --fs-header-location:1.4rem;
+        --fs-header-num:1.8rem;
+        --fs-header-label:1.4rem;
+    }
+}
