@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    @extend .flex-center;
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;

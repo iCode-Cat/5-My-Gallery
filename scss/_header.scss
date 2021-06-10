@@ -1,0 +1,53 @@
+.header {
+   
+    flex-direction: column;
+    @extend .flex-center;
+    // Header Profile Info
+    &-profile {
+        flex-direction: column;
+        @extend .flex-center;
+        img {
+            border-radius: 1.6rem;
+            max-width: 101px;
+            margin-bottom: 1.1rem;
+        }
+        &-name {
+            font-size: var(--fs-header-name);
+            color: var(--ff-clr-darkGray);
+            margin-bottom: 0.4rem;
+        }
+        &-location {
+            font-size:var(--fs-header-location);
+            color: var(--ff-clr-lightGray);
+            margin-bottom: 1.2rem;
+        }
+    }
+    // Header Profile Stats
+    &-profile-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 0fr);
+        gap: 12px;
+        margin-bottom: 4rem;
+        .box {
+            @extend .flex-center;
+            width: 78px;
+            height: 52px;
+            border-radius: 12px;
+            flex-direction: column;
+            background:var(--ff-clr-gray);
+            .stat-number {
+                color: var(--ff-clr-darkGray);
+                font-size: var(--fs-header-num);
+            }
+            .stat-label {
+                color: var(--ff-clr-lightestGray);
+                font-size: var(--fs-header-label);
+            }
+        }
+    }
+    @media (min-width:50em) {
+        img {
+            max-width: 156px ;
+        }
+    }
+}
