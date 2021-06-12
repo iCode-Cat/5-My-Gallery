@@ -48,6 +48,22 @@
     @media (min-width:50em) {
         img {
             max-width: 156px ;
+
+        }
+        .box {
+            width: 100px;
+            height: 67px;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .header {
+            &-profile-stats {
+                gap:24px
+            }
+            &-profile-name {
+                margin-bottom: 1.4rem;
+            }
         }
     }
 }
